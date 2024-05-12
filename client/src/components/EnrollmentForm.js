@@ -70,7 +70,8 @@ const EnrollmentForm = () => {
 
   const [s3FirstName, sets3FirstName] = useState("");
   const [s3LastName, sets3LastName] = useState("");
-  const [s3Signature, sets3Signature] = useState("");
+  const [sign, setSign] = useState();
+  const [url, setUrl] = useState();
   const [s3Date, sets3Date] = useState("");
   const [s3HomePhoneNo, sets3HomePhoneNo] = useState("");
   const [s3WorkPhoneNo, sets3WorkPhoneNo] = useState("");
@@ -207,7 +208,7 @@ const EnrollmentForm = () => {
           signingOnBehalfOf_dependent: checkedThree,
           firstName: s3FirstName,
           lastName: s3LastName,
-          signature: s3Signature,
+          signature: url,
           date: s3Date,
           homePhone: s3HomePhoneNo,
           workPhone: s3WorkPhoneNo,
@@ -224,7 +225,8 @@ const EnrollmentForm = () => {
       setCheckedThree(false);
       sets3FirstName("");
       sets3LastName("");
-      sets3Signature("");
+      setSign("");
+      setUrl("");
       sets3Date("");
       sets3HomePhoneNo("");
       sets3WorkPhoneNo("");
@@ -298,8 +300,10 @@ const EnrollmentForm = () => {
         sets3FirstName,
         s3LastName,
         sets3LastName,
-        s3Signature,
-        sets3Signature,
+        sign,
+        setSign,
+        url,
+        setUrl,
         s3Date,
         sets3Date,
         s3HomePhoneNo,

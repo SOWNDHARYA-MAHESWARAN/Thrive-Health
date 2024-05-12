@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import { Con } from "./EnrollmentForm";
-
+import SignatureCanvas from "react-signature-canvas";
 const Section3 = ({ onBack, onNext }) => {
   const {
     s3FirstName,
     sets3FirstName,
     s3LastName,
     sets3LastName,
-    s3Signature,
-    sets3Signature,
+    sign,
+    setSign,
+    url,
+    setUrl,
     s3Date,
     sets3Date,
     s3HomePhoneNo,
@@ -33,6 +35,14 @@ const Section3 = ({ onBack, onNext }) => {
 
   const handleChangeThree = () => {
     setCheckedThree(!checkedThree);
+  };
+
+  const handleClear = () => {
+    sign.clear();
+    setUrl("");
+  };
+  const handleGenerate = () => {
+    setUrl(sign.getTrimmedCanvas().toDataURL("image/png"));
   };
 
   return (
@@ -112,15 +122,30 @@ const Section3 = ({ onBack, onNext }) => {
             <div className="row">
               <div className="column">
                 <label htmlFor="sign">Signature</label>
-                <br />
-                <input
-                  type="text"
-                  placeholder="Enter Signature"
-                  id="sign"
-                  value={s3Signature}
-                  onChange={(e) => sets3Signature(e.target.value)}
-                  required
-                />
+                <div>
+                  <div
+                    style={{
+                      border: "2px solid black",
+                      width: 250,
+                      height: 200,
+                    }}
+                  >
+                    <SignatureCanvas
+                      canvasProps={{
+                        width: 250,
+                        height: 200,
+                        className: "sigCanvas",
+                      }}
+                      ref={(data) => setSign(data)}
+                    />
+                  </div>
+                  <button type="button" onClick={handleClear}>
+                    Clear
+                  </button>
+                  <button type="button" onClick={handleGenerate}>
+                    Confirm
+                  </button>
+                </div>
               </div>
               <div className="column">
                 <label htmlFor="date">Date</label>
