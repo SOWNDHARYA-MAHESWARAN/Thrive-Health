@@ -13,7 +13,7 @@ React.js: Frontend development. Node.js: Server-side runtime environment. Expres
 
 3.Routes: /post: POST endpoint for storing patient data in MongoDB. /get: Endpoint for retrieving patient details and generating PDFs using stored data.
 
-4.Client Side:
+4.Client Side: Responsible for user interface
 
 5.Installation: To run this project locally: Clone the project to your local machine.
 
