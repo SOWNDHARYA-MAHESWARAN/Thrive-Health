@@ -24,7 +24,7 @@ export const postSection3 = catchAsyncErrors(async (req, res, next) => {
     dependent: signingOnBehalfOf_dependent,
     firstName: firstName,
     lastName: lastName,
-    signature: sign,
+    signature: url,
     date: date,
     homePhone: homePhone,
     workPhone: workPhone,
