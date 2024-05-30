@@ -15,13 +15,18 @@ This project aims to streamline patient onboarding processes for family practice
 * Visual Studio Code: Primary IDE. 
 * pdf-lib: npm module for PDF generation.
 
-### 2.Server Side: The server manages CRUD operations in MongoDB and establishes connections between the frontend and backend, as well as with MongoDB. To install all functionalities, type the command npm install in the terminal of server folder. Each section is considered as a separate collection(models) and they have their corresponding controllers, routes and middlewares.
+### 2.Server Side: 
+The server manages CRUD operations in MongoDB and establishes connections between the frontend and backend, as well as with MongoDB. To install all functionalities, type the command npm install in the terminal of server folder. Each section is considered as a separate collection(models) and they have their corresponding controllers, routes and middlewares.
 
-### 3.Routes: /post: POST endpoint for storing patient data in MongoDB. /get: Endpoint for retrieving patient details and generating PDFs using stored data.
+### 3.Routes: 
+* /post: POST endpoint for storing patient data in MongoDB. 
+* /get: Endpoint for retrieving patient details and generating PDFs using stored data.
 
-### 4.Client Side: Responsible for user interface
+### 4.Client Side: 
+Responsible for user interface
 
-### 5.Installation: To run this project locally: Clone the project to your local machine.
+### 5.Installation: 
+To run this project locally: Clone the project to your local machine.
 
 Install dependencies: Run npm install in the terminal of server folder and client folder.
 
