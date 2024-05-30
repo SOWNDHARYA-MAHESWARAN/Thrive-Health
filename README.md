@@ -31,9 +31,9 @@ Responsible for user interface
 ### 5. Installation: 
 To run this project locally: Clone the project to your local machine.
 
-Install dependencies: Run npm install in the terminal of server folder and client folder.
+* Install dependencies: Run npm install in the terminal of server folder and client folder.
 
-To Start the server: Run npm run dev. Navigate to the client directory and start the client: Run npm start.
+* To Start the server: Run npm run dev. Navigate to the client directory and start the client: Run npm start.
 
 ### 6. Usage and Functionalities:
 
