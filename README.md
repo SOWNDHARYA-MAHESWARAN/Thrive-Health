@@ -1,7 +1,7 @@
-# Thrive-Health
+
 # Thrive Health Hackathon
 
-## Streamline Patient Onboarding for Family Practices
+# Streamline Patient Onboarding for Family Practices
 
 This project aims to streamline patient onboarding processes for family practices through a web-based enrollment form and PDF generation capabilities.
 
